@@ -2,7 +2,13 @@ package AtrapaFruta;
 
 import java.util.ArrayList;
 
-public class Ventana {
+public class Ventana<Elemento> {
+	private Escenario escenario;
+	private final int WIDTH=80, HEIGHT=65;
+	
+	public void ventana() {
+		this.escenario = new Escenario();
+	}
 	
 	public void dibujarEscenario(ArrayList<Elemento>elementos, int WIDTH, int HEIGHT) {
 		char [][]escenarioTextual = new char [WIDTH][HEIGHT];
@@ -14,7 +20,7 @@ public class Ventana {
 				else {
 					escenarioTextual[i][j]='.';
 				}
-			}
+			} 
 		}
 		for(Elemento elemento: elementos) {
 			escenarioTextual[elemento.posicionX][elemento.posicionY] = elemento.getSimbolo();

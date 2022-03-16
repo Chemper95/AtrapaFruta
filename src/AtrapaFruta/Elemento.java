@@ -6,10 +6,11 @@ public class Elemento {
 	protected int posicionY;
 	protected int WIDTH;
 	protected int HEIGHT;
-	protected int imagen;
-	protected int simbolo;
+	protected String imagen;
+	protected String nombre;
+	protected char simbolo;
 	
-	public Elemento(int posicionX, int posicionY, int WIDTH, int HEIGHT, int imagen, int simbolo) {
+	public Elemento(int posicionX, int posicionY, int WIDTH, int HEIGHT, String imagen, char simbolo) {
 		super();
 		this.posicionX = posicionX;
 		this.posicionY = posicionY;
@@ -60,20 +61,20 @@ public class Elemento {
  
 	
 	
-	public int getImagen() {
+	public String getImagen() {
 		return imagen;
 	}
 
-	public void setImagen(int Imagen) {
+	public void setImagen(String Imagen) {
 		imagen = Imagen;
 	}
 
 	
-	public int getSimbolo() {
+	public char getSimbolo() {
 		return simbolo;
 	}
 
-	public void setSimbolo(int Simbolo) {
+	public void setSimbolo(char Simbolo) {
 		simbolo = Simbolo;
 	}
 
@@ -82,6 +83,8 @@ public class Elemento {
 	
 	public void mostrarDatos() {
 	}
+
+
 	
 
 	

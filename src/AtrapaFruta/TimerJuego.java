@@ -4,13 +4,14 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 public class TimerJuego extends TimerTask {
-	private final Ventana ventana;
-	TimerJuego(Ventana ventana){
-		this.ventana = ventana;
+	private final TimerJuego ventana;
+	TimerJuego(TimerJuego timerJuego){
+		this.ventana = timerJuego;
 	}
+	
 	public void run() {
 		Timer timer = new Timer();
-		timer.schedule(new TimerJuego(this), 0, 200);
+		timer.schedule(new TimerJuego(this), 0, 150);
 	}
 
 }

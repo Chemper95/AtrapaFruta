@@ -2,12 +2,12 @@ package AtrapaFruta;
 
 public class FrutaMagica extends Fruta{
 	private final Efecto efecto;
-	FrutaMagica(Efecto efecto){
-		this.efecto = Efecto;
+	FrutaMagica(Efectos efecto){
+		this.efecto = efecto;
 	}
 	
-	public void efectos() {
-		
+	public enum Frutas{
+		Dragón, Dorada, Plateada, Harry_Potter, Venenosa;
 	}
 }
 
